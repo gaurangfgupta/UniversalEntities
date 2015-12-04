@@ -13,4 +13,5 @@ namespace UniversalEntities.Interfaces
         string Middle { get; set; }
         string Last { get; set; }
     }
+
 }

@@ -6,10 +6,9 @@ using System.Threading.Tasks;
 
 namespace UniversalEntities.Interfaces
 {
-    interface IPhone
+    interface IMobile
     {
         string CountryCode { get; set; }
-        string StdCode { get; set; }
         string Number { get; set; }
     }
 }

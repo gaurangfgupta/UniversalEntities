@@ -40,7 +40,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Interfaces\IAddress.cs" />
+    <Compile Include="Interfaces\IMobile.cs" />
     <Compile Include="Interfaces\IPersonName.cs" />
+    <Compile Include="Interfaces\IPhone.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

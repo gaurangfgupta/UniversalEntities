@@ -12,32 +12,4 @@ namespace UniversalEntities.Interfaces
         string Number { get; set; }
         string StdCode { get; set; }
     }
-    struct Mobile : IMobile
-    {
-        public string CountryCode
-        {
-            get
-            {
-                throw new NotImplementedException();
-            }
-
-            set
-            {
-                throw new NotImplementedException();
-            }
-        }
-
-        public string Number
-        {
-            get
-            {
-                throw new NotImplementedException();
-            }
-
-            set
-            {
-                throw new NotImplementedException();
-            }
-        }
-    }
 }

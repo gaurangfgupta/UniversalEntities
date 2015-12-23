@@ -10,6 +10,7 @@ namespace UniversalEntities.Interfaces
     {
         string CountryCode { get; set; }
         string Number { get; set; }
+        string StdCode { get; set; }
     }
     struct Mobile : IMobile
     {

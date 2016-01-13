@@ -10,6 +10,5 @@ namespace UniversalEntities
     {
         string CountryCode { get; set; }
         string Number { get; set; }
-        string StdCode { get; set; }
     }
 }

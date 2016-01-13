@@ -16,6 +16,6 @@ namespace UniversalEntities
 
         string Last { get; set; }
 
-        string Full { get; set; }
+        //string Full { get; set; }
     }
 }

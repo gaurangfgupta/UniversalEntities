@@ -15,6 +15,4 @@ namespace UniversalEntities.Abstracts
         public List<Email> Emails { get; set; }
 
     }
-
-    
 }

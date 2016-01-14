@@ -40,6 +40,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Abstracts\Contact.cs" />
+    <Compile Include="Abstracts\DetailedPerson.cs" />
     <Compile Include="Abstracts\IBankAccount.cs" />
     <Compile Include="Abstracts\IEmail.cs" />
     <Compile Include="Abstracts\IAddress.cs" />

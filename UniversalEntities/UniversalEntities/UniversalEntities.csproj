@@ -40,12 +40,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Interfaces\IBankAccount.cs" />
-    <Compile Include="Interfaces\IEmail.cs" />
-    <Compile Include="Interfaces\IAddress.cs" />
-    <Compile Include="Interfaces\IMobile.cs" />
-    <Compile Include="Interfaces\IPersonName.cs" />
-    <Compile Include="Interfaces\IPhone.cs" />
+    <Compile Include="Abstracts\IBankAccount.cs" />
+    <Compile Include="Abstracts\IEmail.cs" />
+    <Compile Include="Abstracts\IAddress.cs" />
+    <Compile Include="Abstracts\IMobile.cs" />
+    <Compile Include="Abstracts\IPersonName.cs" />
+    <Compile Include="Abstracts\IPhone.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

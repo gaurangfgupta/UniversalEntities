@@ -12,17 +12,6 @@ namespace UniversalEntities
     }
     public struct Email : IEmail
     {
-        public string EmailAddress
-        {
-            get
-            {
-                throw new NotImplementedException();
-            }
-
-            set
-            {
-                throw new NotImplementedException();
-            }
-        }
+        public string EmailAddress { get; set; }
     }
 }

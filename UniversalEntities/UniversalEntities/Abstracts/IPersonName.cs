@@ -21,56 +21,12 @@ namespace UniversalEntities
 
     public struct PersonName : IPersonName
     {
-        public string First
-        {
-            get
-            {
-                throw new NotImplementedException();
-            }
+        public string First        {            get; set;        }
 
-            set
-            {
-                throw new NotImplementedException();
-            }
-        }
+        public string Last { get; set; }
 
-        public string Last
-        {
-            get
-            {
-                throw new NotImplementedException();
-            }
+        public string Middle { get; set; }
 
-            set
-            {
-                throw new NotImplementedException();
-            }
-        }
-
-        public string Middle
-        {
-            get
-            {
-                throw new NotImplementedException();
-            }
-
-            set
-            {
-                throw new NotImplementedException();
-            }
-        }
-
-        public string Title
-        {
-            get
-            {
-                throw new NotImplementedException();
-            }
-
-            set
-            {
-                throw new NotImplementedException();
-            }
-        }
+        public string Title { get; set; }
     }
 }

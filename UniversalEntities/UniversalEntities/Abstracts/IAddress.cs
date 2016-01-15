@@ -24,95 +24,18 @@ namespace UniversalEntities
     }
     public struct Address : IAddress
     {
-        public string City
-        {
-            get
-            {
-                throw new NotImplementedException();
-            }
+        public string City { get; set; }
 
-            set
-            {
-                throw new NotImplementedException();
-            }
-        }
+        public string Country { get; set; }
 
-        public string Country
-        {
-            get
-            {
-                throw new NotImplementedException();
-            }
+        public string Line1 { get; set; }
 
-            set
-            {
-                throw new NotImplementedException();
-            }
-        }
+        public string Line2 { get; set; }
 
-        public string Line1
-        {
-            get
-            {
-                throw new NotImplementedException();
-            }
+        public string Line3 { get; set; }
 
-            set
-            {
-                throw new NotImplementedException();
-            }
-        }
+        public string PinCode { get; set; }
 
-        public string Line2
-        {
-            get
-            {
-                throw new NotImplementedException();
-            }
-
-            set
-            {
-                throw new NotImplementedException();
-            }
-        }
-
-        public string Line3
-        {
-            get
-            {
-                throw new NotImplementedException();
-            }
-
-            set
-            {
-                throw new NotImplementedException();
-            }
-        }
-
-        public string PinCode
-        {
-            get
-            {
-                throw new NotImplementedException();
-            }
-
-            set
-            {
-                throw new NotImplementedException();
-            }
-        }
-
-        public string State
-        {
-            get
-            {
-                throw new NotImplementedException();
-            }
-
-            set
-            {
-                throw new NotImplementedException();
-            }
-        }
+        public string State { get; set; }
     }
 }

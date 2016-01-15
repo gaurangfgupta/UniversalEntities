@@ -10,7 +10,7 @@ namespace UniversalEntities
     {
         string EmailAddress { get; set; }
     }
-    struct Email : IEmail
+    public struct Email : IEmail
     {
         public string EmailAddress
         {

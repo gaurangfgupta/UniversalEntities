@@ -12,7 +12,7 @@ namespace UniversalEntities
         string StdCode { get; set; }
         string Number { get; set; }
     }
-    struct Phone : IPhone
+    public struct Phone : IPhone
     {
         public string CountryCode
         {

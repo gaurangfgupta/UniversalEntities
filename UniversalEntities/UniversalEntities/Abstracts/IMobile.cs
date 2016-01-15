@@ -11,7 +11,7 @@ namespace UniversalEntities
         string CountryCode { get; set; }
         string Number { get; set; }
     }
-    struct Mobile : IMobile
+    public struct Mobile : IMobile
     {
         public string CountryCode
         {

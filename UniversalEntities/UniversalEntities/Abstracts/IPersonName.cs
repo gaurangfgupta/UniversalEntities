@@ -21,7 +21,8 @@ namespace UniversalEntities
 
     public struct PersonName : IPersonName
     {
-        public string First        {            get; set;        }
+
+        public string First { get; set; }
 
         public string Last { get; set; }
 

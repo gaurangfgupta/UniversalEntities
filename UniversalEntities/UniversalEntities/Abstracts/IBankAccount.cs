@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace UniversalEntities
 {
-    interface IBankAccount
+    public interface IBankAccount
     {
         string BankName { get; set; }
         string AccountNumber { get; set; }
@@ -14,7 +14,7 @@ namespace UniversalEntities
         string MICR { get; set; }
         string Branch { get; set; }
     }
-    struct BankAccount : IBankAccount
+    public struct BankAccount : IBankAccount
     {
         public string AccountNumber
         {

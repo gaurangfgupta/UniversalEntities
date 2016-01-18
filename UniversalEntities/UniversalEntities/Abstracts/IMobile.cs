@@ -6,15 +6,8 @@ using System.Threading.Tasks;
 
 namespace UniversalEntities
 {
-    interface IMobile
+    interface IMobiles
     {
-        string CountryCode { get; set; }
-        string Number { get; set; }
-    }
-    public struct Mobile : IMobile
-    {
-        public string CountryCode { get; set; }
-
-        public string Number { get; set; }
+        List<string> Mobiles { get; set; }
     }
 }

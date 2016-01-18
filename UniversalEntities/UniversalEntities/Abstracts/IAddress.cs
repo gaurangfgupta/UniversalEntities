@@ -22,7 +22,7 @@ namespace UniversalEntities
 
         string Country { get; set; }
     }
-    public struct Address : IAddress
+    public class Address : IAddress
     {
         public string City { get; set; }
 

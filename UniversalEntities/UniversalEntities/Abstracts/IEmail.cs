@@ -6,12 +6,8 @@ using System.Threading.Tasks;
 
 namespace UniversalEntities
 {
-    interface IEmail
+    interface IEmails
     {
-        string EmailAddress { get; set; }
-    }
-    public struct Email : IEmail
-    {
-        public string EmailAddress { get; set; }
+        List<string> Emails { get; set; }
     }
 }

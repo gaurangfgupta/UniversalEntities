@@ -19,9 +19,10 @@ namespace UniversalEntities
         //string Full { get; set; }
     }
 
-    public struct PersonName : IPersonName
+    public class PersonName : IPersonName
     {
-        public string First        {            get; set;        }
+
+        public string First { get; set; }
 
         public string Last { get; set; }
 

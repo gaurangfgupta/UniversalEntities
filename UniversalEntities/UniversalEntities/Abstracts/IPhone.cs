@@ -6,18 +6,8 @@ using System.Threading.Tasks;
 
 namespace UniversalEntities
 {
-    interface IPhone
+    interface IPhones
     {
-        string CountryCode { get; set; }
-        string StdCode { get; set; }
-        string Number { get; set; }
-    }
-    public struct Phone : IPhone
-    {
-        public string CountryCode { get; set; }
-
-        public string Number { get; set; }
-
-        public string StdCode { get; set; }
+        List<string> Phones { get; set; }
     }
 }

@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 namespace UniversalEntities
 {
-    public abstract class Contact : IMobiles, IPhones, IEmails
+    public abstract class ContactPersonOrganization : IMobiles, IPhones, IEmails
     {
         public PersonName Name { get; set; }
         public List<Address> Addresses { get; set; }

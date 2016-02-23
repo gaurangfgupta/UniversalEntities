@@ -21,13 +21,25 @@ namespace UniversalEntities
 
     public class PersonName : IPersonName
     {
+        /// <summary>
+        /// Title of a person
+        /// </summary>
+        public string Title { get; set; }
 
+        /// <summary>
+        /// First name of a person or name of an organization
+        /// </summary>
         public string First { get; set; }
 
+        /// <summary>
+        /// Last name or family name of a person
+        /// </summary>
         public string Last { get; set; }
 
+        /// <summary>
+        /// Middle name of a person
+        /// </summary>
         public string Middle { get; set; }
 
-        public string Title { get; set; }
     }
 }

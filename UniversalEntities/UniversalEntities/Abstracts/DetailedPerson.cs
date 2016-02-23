@@ -2,7 +2,7 @@
 
 namespace UniversalEntities
 {
-    class DetailedPerson : Contact
+    class DetailedPerson : ContactPersonOrganization
     {
         public PersonName HusbandFatherName { get; set; }
         public DateTime DateOfBirth { get; set; }

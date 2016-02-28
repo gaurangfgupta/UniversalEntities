@@ -16,7 +16,7 @@ namespace UniversalEntities
 
         string Last { get; set; }
 
-        //string Full { get; set; }
+        string Full { get; }
     }
 
     public class PersonName : IPersonName
@@ -32,14 +32,36 @@ namespace UniversalEntities
         public string First { get; set; }
 
         /// <summary>
-        /// Last name or family name of a person
-        /// </summary>
-        public string Last { get; set; }
-
-        /// <summary>
         /// Middle name of a person
         /// </summary>
         public string Middle { get; set; }
 
+        /// <summary>
+        /// Last name or family name of a person
+        /// </summary>
+        public string Last { get; set; }
+
+
+        public string Full
+        {
+            get
+            {
+                if (!string.IsNullOrWhiteSpace(Middle) && string.IsNullOrWhiteSpace(Last))
+                {
+                    throw new MemberAccessException("A name cannot have a middle name without last name. Either remove the former or provide the latter.");
+                }
+                StringBuilder fullName = new StringBuilder();
+                fullName.AppendFormat("{0} {1}",Title,First);
+                if (!string.IsNullOrWhiteSpace(Middle))
+                {
+                    fullName.AppendFormat(" {0}", Middle);
+                }
+                if (!string.IsNullOrWhiteSpace(Last))
+                {
+                    fullName.AppendFormat(" {0}", Last);
+                }
+                return fullName.ToString().Trim();
+            }
+        }
     }
 }

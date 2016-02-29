@@ -47,31 +47,38 @@ namespace UniversalEntities
             StringBuilder addressBuilder = new StringBuilder();
             if (!string.IsNullOrWhiteSpace(Line1))
             {
-                addressBuilder.AppendLine(Line1);
+                addressBuilder.Append(Line1);
+                addressBuilder.Append(System.Environment.NewLine);
             }
             if (!string.IsNullOrWhiteSpace(Line2))
             {
-                addressBuilder.AppendLine(Line2);
+                addressBuilder.Append(Line2);
+                addressBuilder.Append(System.Environment.NewLine);
             }
             if (!string.IsNullOrWhiteSpace(Line3))
             {
-                addressBuilder.AppendLine(Line3);
+                addressBuilder.Append(Line3);
+                addressBuilder.Append(System.Environment.NewLine);
             }
             if (!string.IsNullOrWhiteSpace(City))
             {
-                addressBuilder.AppendLine(City);
+                addressBuilder.Append(City);
+                addressBuilder.Append(System.Environment.NewLine);
             }
             if (!string.IsNullOrWhiteSpace(PinCode))
             {
-                addressBuilder.AppendLine(PinCode);
+                addressBuilder.Append(PinCode);
+                addressBuilder.Append(System.Environment.NewLine);
             }
             if (!string.IsNullOrWhiteSpace(State))
             {
-                addressBuilder.AppendLine(State);
+                addressBuilder.Append(State);
+                addressBuilder.Append(System.Environment.NewLine);
             }
             if (!string.IsNullOrWhiteSpace(Country))
             {
-                addressBuilder.AppendLine(Country);
+                addressBuilder.Append(Country);
+                addressBuilder.Append(System.Environment.NewLine);
             }
             string address = addressBuilder.ToString().Trim();
             addressBuilder = null;

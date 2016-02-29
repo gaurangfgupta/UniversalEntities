@@ -38,6 +38,10 @@ namespace UniversalEntities
 
         public string Country { get; set; }
 
+        /// <summary>
+        /// Returns the whole address in string form. Properties with null, empty or whitespace values are left out
+        /// </summary>
+        /// <returns></returns>
         public override string ToString()
         {
             StringBuilder addressBuilder = new StringBuilder();

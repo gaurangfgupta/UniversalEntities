@@ -110,9 +110,9 @@ namespace UniversalEntities
         public void SortAddressLines()
         {
             string[] addressLines = new string[] { Line1, Line2, Line3 };
-            for (int i = 0; i < addressLines.Length - 2; i++)
+            for (int i = 0; i < addressLines.Length - 1; i++)
             {
-                for (int j = i + 1; j < addressLines.Length - 1; j++)
+                for (int j = i + 1; j < addressLines.Length; j++)
                 {
                     if (string.IsNullOrWhiteSpace(addressLines[i]))
                     {

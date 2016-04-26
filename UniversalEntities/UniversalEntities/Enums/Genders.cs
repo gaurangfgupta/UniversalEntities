@@ -1,6 +1,6 @@
 ﻿namespace UniversalEntities
 {
-    public enum Gender
+    public enum Genders
     {
         Female,
         Male,

@@ -48,7 +48,7 @@
     <Compile Include="Abstracts\IMobile.cs" />
     <Compile Include="Abstracts\IPersonName.cs" />
     <Compile Include="Abstracts\IPhone.cs" />
-    <Compile Include="Enums\Gender.cs" />
+    <Compile Include="Enums\Genders.cs" />
     <Compile Include="Enums\MaritalStatuses.cs" />
     <Compile Include="Enums\Religions.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

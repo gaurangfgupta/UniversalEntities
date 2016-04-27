@@ -26,19 +26,27 @@ namespace UniversalEntities
     }
     public class Address : IAddress
     {
-        public string Line1 { get; set; }
+        private string line1;
+        private string line2;
+        private string line3;
+        private string city;
+        private string pinCode;
+        private string state;
+        private string country;
 
-        public string Line2 { get; set; }
+        public string Line1 { get { return line1; } set { line1 = value.Trim(); } }
 
-        public string Line3 { get; set; }
+        public string Line2 { get { return line2; } set { line2 = value.Trim(); } }
 
-        public string City { get; set; }
+        public string Line3 { get { return line3; } set { line3 = value.Trim(); } }
 
-        public string PinCode { get; set; }
+        public string City { get { return city; } set { city = value.Trim(); } }
 
-        public string State { get; set; }
+        public string PinCode { get { return pinCode; } set { pinCode = value.Trim(); } }
 
-        public string Country { get; set; }
+        public string State { get { return state; } set { state = value.Trim(); } }
+
+        public string Country { get { return country; } set { country = value.Trim(); } }
 
         /// <summary>
         /// Returns the whole address in string form. Properties with null, empty or whitespace values are left out

@@ -21,25 +21,30 @@ namespace UniversalEntities
 
     public class PersonName : IPersonName
     {
+        private string title;
+        private string first;
+        private string middle;
+        private string last;
+
         /// <summary>
         /// Title of a person
         /// </summary>
-        public string Title { get; set; }
+        public string Title { get { return title; } set { title = value.Trim(); } }
 
         /// <summary>
         /// First name of a person or name of an organization
         /// </summary>
-        public string First { get; set; }
+        public string First { get { return first; } set { first = value.Trim(); } }
 
         /// <summary>
         /// Middle name of a person
         /// </summary>
-        public string Middle { get; set; }
+        public string Middle { get { return middle; } set { middle = value.Trim(); } }
 
         /// <summary>
         /// Last name or family name of a person
         /// </summary>
-        public string Last { get; set; }
+        public string Last { get { return last; } set { last = value.Trim(); } }
 
 
         public string Full
